@@ -64,7 +64,7 @@ podlove_total_average_downloads <- function(df_tidy_data,
     # NSE grouping for gvar
     dplyr::group_by(ep_number, title, ep_num_title) %>%
     # additional grouping for time since launch
-    dplyr::group_by(hours_since_release, add = TRUE) %>%
+    dplyr::group_by(hours_since_release, .add = TRUE) %>%
     dplyr::summarize(dls_total = n()) %>% 
     dplyr::ungroup()  %>% 
     # set limits
