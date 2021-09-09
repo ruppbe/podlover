@@ -96,7 +96,7 @@ podlove_baseplot <- function(df_tidy_data,
   if (!legend) {
     
     g_dl_curves <- g_dl_curves + 
-      ggplot2::guides(color = FALSE) 
+      ggplot2::guides(color = "none") 
   }
   
   # add dotdots
