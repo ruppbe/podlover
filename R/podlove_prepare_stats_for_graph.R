@@ -99,7 +99,7 @@ podlove_prepare_stats_for_graph <- function(df_stats,
   # check if gvar is empty
 
   if (!is.null(gvar)) {
-    prep_stats <- prep_stats %>% group_by(!! gvar, add = TRUE)
+    prep_stats <- prep_stats %>% group_by(!! gvar, .add = TRUE)
   }
 
   # summarize
