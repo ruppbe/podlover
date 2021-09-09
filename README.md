@@ -53,6 +53,8 @@ and can be installed via `devtools`:
 
     # install podlover from GitHub
     devtools::install_github("lordyo/podlover")
+    # intall this fork from GizHub
+    devtools::install_github("ruppbe/podlover")
 
 Once installed, you can load the package.
 
